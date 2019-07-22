@@ -1,0 +1,251 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Enrique Noriega-Atala}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {machine learning, statistics, computer science, artificial intelligence},
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+%\begin{minipage}{0.45\linewidth}
+%  \href{http://www.unc.edu/}{The University of Arizona} \\
+%  School of Information \\
+%  Tucson, AZ 85719
+%\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +1 (520) 241-5945 \\
+    %Fax: &  (919) 962-5678 \\
+    Email: & \href{mailto:enrique.noriega@gmail.com}{\tt enrique.noriega@gmail.com} \\
+    Homepage: & \href{https://enoriega.info/}{\tt https://enoriega.info/} \\
+  \end{tabular}
+\end{minipage}
+
+
+%\section*{Personal}
+%
+%\begin{itemize}
+%\item Born on September 29, 1895.
+%\item United States Citizen.
+%\end{itemize}
+
+\section*{Objective}
+I strive towards solving problems by implementing state of the art statistical learning algorithms. By using a correct modeling, best engineering practices and meaningful data, enterprises can get the lead in their competitive environment. I am a strong team member contributing my well-rounded background in Computer Science, Machine Learning and IT.
+
+
+\section*{Skills}
+\subsection*{Programming Languages:}
+\begin{itemize}
+	\item Python, Scala, Java, C\#, C, C++, R, Matlab, JavaScript, VB.NET
+\end{itemize}
+
+\subsection*{Scientific Tooling:}
+\begin{itemize}
+	\item PyTorch, DyNET, Scikit-Learn, NumPy, SciPy, Matplotlib, CoreNLP, REACH
+\end{itemize}
+
+
+\subsection*{Systems administration}
+\begin{itemize}
+	\item Unix-like environment proficiency.
+	\item Bash scripting.
+	\item Relational DBMS (SQL Server, Postgres, MySQL) and NoSQL (Redis, Neo4J) experience.
+	\item Cloud computing environment experience with Azure and AWS.
+\end{itemize}
+
+
+\section*{Professional Experience}
+
+\begin{itemize}
+\item \textbf{2013 - present} Graduate Research Associate, The University of Arizona (UA)
+\item \begin{itemize}
+	\item Worked within \href{http://clulab.cs.arizona.edu}{CLU lab} and \href{https://ml4ai.github.io}{ML4AI} on multiple Natural Language Processing (NLP) projects related to information extraction and its applications for scientific literature. Published multiple articles in top-tier peer-reviewed venues.
+\end{itemize}
+\item \textbf{2013 - present} Teaching Assistant, UA. Courses:
+\item \begin{itemize}
+	\item Computer Organization (2013)
+	\item Data Structures (2014)
+	\item Information Retrieval and Web Search (2015, 2016)
+	\item Introduction to Machine Learning (2017, 2019)
+\end{itemize}
+\item \textbf{2012 - 2019} Software Development and DevOps Consulting, FlexBPO
+\item \begin{itemize}
+	\item Lead the migration of multiple enterprise information systems into Microsoft's Azure cloud from their previous on-premises location. Designed and coordinated the migration of software assets and data, as well as worked on software adaptations to make the systems work properly on their new cloud-based home.
+	\item Participated on the design and architecture of multiple information systems based on the .NET stack.
+\end{itemize}
+\item \textbf{2010 - 2012} Sr Software Developer, FSC
+\item \begin{itemize}
+\item Worked on the development of an ERP system and multiple ancillary products for the produce industry based on the .NET stack.
+\end{itemize}
+\item \textbf{2009 - 2010} Software Developer, Teknol, SA de CV
+\item \begin{itemize}
+\item Worked on GIS systems for multitouch hardware for the mining industry.
+\end{itemize}
+\item \textbf{2008 - 2009} Internship at {\small Centro de Investigaci\'{o}n y Desarrollo de Ingenier\'{i}a Avanzada, AC}
+\item \begin{itemize}
+\item Web developer working with Python and Django-based projects.
+\end{itemize}
+\item \textbf{2007 - 2008} Web Developer, Optima Commerce LLC
+\item \begin{itemize}
+\item Contributed in the development of web-based international trade information system based on ASP.NET.
+\end{itemize}
+\item \textbf{2007} Jr. Developer, Marketing Movil S.A de C.V
+\item \begin{itemize}
+\item Contributed in the development of a Java-based service for sending and transmitting text messages (SMS) for a local marketing agency.
+\end{itemize}
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+  \item \textbf{Ph.D. Information Science}, The University of Arizona (Fall 2019). \\
+     \textbf{- Minor:} Statistics
+  \item \textbf{M.S. Computer Science}, The University of Arizona (2014).
+  \item \textbf{B.S. Information Technologies}, Monterrey Institute of Technology and Higher Education (2010).
+\end{itemize}
+
+
+%\section*{Research Interests}
+%Machine Learning, Reinforcement Learning, Natural Language Processing, Artificial Intelligence, Statistics.
+
+\section*{Honors and Awards}
+\begin{itemize}
+	\item UA Graduate \& Professional Student's Council Travel Grant (2018).
+	\item UA School of Information's Travel Award (2018).
+	\item International Conference in Data Mining Student Award (2018).
+	\item Galileo Circle Scholar, UA's College of Science (2014).
+	\item Instituto Educativo Sonora-Arizona scholarship (2013-2014).
+	\item CONACyT graduate studies scholarship (2012-2014).
+	\item CENEVAL's outstanding performance testimony on the EGEL test (2010). 
+\end{itemize}
+
+%
+%\section*{Presentations and Publications}
+%
+%\subsection*{Journal Publications}
+%\begin{itemize}
+%	\item \textbf{Enrique Noriega-Atala}, Paul D. Hein, Shraddha S. Thumsi, Zechy Wong, Xia Wang, Sean M. Hendryx, Clayton T. Morrison\\ Extracting Inter-sentence Relations for Associating Biological Context with Events in Biomedical Text. \textit{IEEE/ACM transactions on computational biology and bioinformatics. 2019.}
+%	\item Marco A. Valenzuela-Esc\'{a}rcega, \"{O}zg\"{u}n Babur, Gus Hahn-Powell, Dane Bell, Thomas Hicks, \textbf{Enrique Noriega-Atala}, Xia Wang, Mihai Surdeanu, Emek Demir, Clayton T. Morrison. \\ Large-scale Automated Machine Reading Discovers New Cancer Driving Mechanisms. \textit{Database: The Journal of Biological Databases and Curation. 2018.} 
+%\end{itemize}
+%
+%\subsection*{Conference Publications}
+%\begin{itemize}
+%\item \textbf{Enrique Noriega-Atala}, Marco A. Valenzuela-Esc\'{a}rcega, Clayton T. Morrison and Mihai Surdeanu. Learning what to read: Focused machine reading. \textit{Proceedings of the Conference on Empirical Methods in Natural Language Processing} (EMNLP), 2017.
+%\end{itemize}
+%
+%\subsection*{Workshop Publications}
+%\begin{itemize}
+%	\item \textbf{Enrique Noriega-Atala}, Marco A. Valenzuela-Esc\'a{a}rcega, Clayton T. Morrison and Mihai Surdeanu. Focused Reading: Reinforcement Learning for What Documents to Read. \textit{Proceedings of the Interactive Machine Learning and Semantic Information Retrieval Workshop at ICML, 2017.}
+%	\item Marco A. Valenzuela-Esc\'{a}rcega, \"{O}zg\"{u}n Babur, Gus Hahn-Powell, Dane Bell, Thomas Hicks, \textbf{Enrique Noriega-Atala}, Xia Wang, Mihai Surdeanu, Emek Demir, Clayton T. Morrison. \\Large-scale Automated Reading with Reach Discovers New Cancer Driving Mechanisms. \textit{Proceedings of the BioCreative VI Workshop} (BioCreative6 2017), 2017, pp. 200-202.
+%	\item \textbf{Enrique Noriega-Atala}, Paul D. Hein, Shraddha S. Thumsi, Zechy Wong, Xia Wang, Clayton T. Morrison. \\ Inter-sentence Relation Extraction for Associating Biological Context with Events in Biomedical Texts. \textit{Proceedings of the Sixth Workshop on Data Mining in Biomedical Informatics and Healthcare at ICDM, 2018.}
+%	\item \textbf{Enrique Noriega-Atala}, Zhengzhong Liang, John A. Bachman, Clayton T. Morrison, Mihai Surdeanu.\\ Understanding the Polarity of Events in the Biomedical Literature: Deep Learning vs. Linguistically-informed Methods. \textit{Proceedings of the Workshop on extracting structured knowledge from scientific publications at NAACL-HLT, 2019.} (In Press) 
+%
+%\end{itemize}
+%
+%\subsection*{Conference Presentations}
+%
+%\begin{itemize}
+%	
+%\item Learning what to read: Focused machine reading. \textit{NLP Applications track, EMNLP}, Copenhagen, Denmark (2017).
+%\item Grounding Gradable Adjectives through Crowd-sourcing \textit{Language Resources and Evaluation Conference}, Miyazaki, Japan (2018).
+%\item Inter-sentence Relation Extraction for Associating Biological Context with Events in Biomedical Text. \textit{Sixth Workshop on Data Mining in Biomedical Informatics and Healthcare at ICDM}, Singapore (2018).
+%\item Inter-sentence Relation Extraction for Associating Biological Context with Events in Biomedical Text. \textit{Sixth Workshop on Data Mining in Biomedical Informatics and Healthcare at ICDM}, Singapore (2018).
+%\item Understanding the Polarity of Events in the Biomedical Literature: Deep Learning vs. Linguistically-informed Methods. \textit{Workshop on extracting structured knowledge from scientific publications at NAACL-HLT}, Minneapolis, Minnesota (2019).
+%\end{itemize}
+%
+%\subsection*{Guest Lectures}
+%\begin{itemize}
+%	\item What is Machine Learning?. For the course \textit{Knowledge-based Systems in the Organizations. Systems and Industrial Engineering program}. Monterrey Institute of Technology and Higher Education, Hermosillo, M\'{e}xico (2015).
+%\end{itemize}
+%
+%\section*{Service}
+%\begin{itemize}
+%	\item Student volunteer at NAACL-HLT. Minneapolis, Minnesota (2019).
+%\end{itemize}
+%\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    %\href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
